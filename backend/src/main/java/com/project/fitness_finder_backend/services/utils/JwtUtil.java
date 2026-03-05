@@ -35,8 +35,8 @@ public class JwtUtil {
 	
 	public String generateToken(String email) {
 		return Jwts.builder().subject(email) 
-				.issuedAt(new Date(System.currentTimeMillis())) // ✅ .issuedAt()
-				.expiration(new Date(System.currentTimeMillis() + expiration)) // ✅ .expiration()
+				.issuedAt(new Date(System.currentTimeMillis())) 
+				.expiration(new Date(System.currentTimeMillis() + expiration))
 				.signWith(key) 
 				.compact();
 	}
