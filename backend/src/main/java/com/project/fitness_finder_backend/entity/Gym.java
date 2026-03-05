@@ -56,7 +56,6 @@ public class Gym {
         this.classes = new ArrayList<>();
     }
 
-    // ✅ Keep this for simple creation
     public Gym(String name, String location, String address) {
         this.name = name;
         this.location = location;
