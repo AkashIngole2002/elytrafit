@@ -22,8 +22,7 @@ public class GymMapper {
 	
 	public GymDto toDto(Gym gym) {
 	    if (gym == null) return null;
-	    
-	    // ✅ PURE MANUAL - NO ModelMapper issues
+
 	    GymDto dto = new GymDto();
 	    dto.setId((int) gym.getId());  // long → int
 	    dto.setName(gym.getName());
