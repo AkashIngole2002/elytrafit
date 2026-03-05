@@ -1,0 +1,8 @@
+.logo{
+    background: 'linear-gradient(90deg, transparent 0%, rgba(124,58,237,0.2) 50%, transparent 100%)';
+    box-shadow: '0 0 20px rgba(124,58,237,0.4)';
+    color: '#e2e8f0';
+    font-weight: 900;
+    letter-spacing:  '-0.03em';
+    text-shadow: '0 0 10px rgba(124,58,237,0.6)'
+}
