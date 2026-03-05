@@ -12,20 +12,6 @@ import org.springframework.web.filter.CorsFilter;
 @EnableJpaRepositories
 public class FitnessFinderBackendApplication {
 
-    @Bean
-    public CorsFilter corsFilter() {
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        CorsConfiguration config = new CorsConfiguration();
-        
-        config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:1845");
-        config.addAllowedHeader("*");
-        config.addAllowedMethod("*");
-        
-        source.registerCorsConfiguration("/**", config);
-        return new CorsFilter(source);
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(FitnessFinderBackendApplication.class, args);
     }
