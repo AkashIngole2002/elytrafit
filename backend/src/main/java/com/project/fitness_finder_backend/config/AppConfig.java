@@ -12,7 +12,6 @@ public class AppConfig {
 	@Bean
 	public ModelMapper mapper() {
 		ModelMapper modelMapper = new ModelMapper();
-		// ✅ Custom mapping: gym.classes.size() → classCount
         modelMapper.typeMap(Gym.class, GymDto.class).addMappings(mapping -> {
             mapping.map(src -> src.getClasses() != null ? src.getClasses().size() : 0L,
                        GymDto::setCount);
