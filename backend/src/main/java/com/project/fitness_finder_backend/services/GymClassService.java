@@ -7,7 +7,6 @@ import com.project.fitness_finder_backend.dto.GymClassDto;
 
 public interface GymClassService {
 	
-//	Update Class Filter Dto
 	List<GymClassDto> filterClass(ClassFilterDto filter);
 	
 	List<GymClassDto> getAllClasses();
